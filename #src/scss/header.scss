@@ -1,0 +1,163 @@
+//====================================================================================================
+.header {
+	box-shadow: 1px 4px 25px rgba(0, 0, 0, 0.25);
+	height: 80px;
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		display: flex;
+		padding: 15px 0px 0px 0px;
+	}
+
+	&__search {
+	}
+
+	&__menu-items {
+		display: flex;
+	}
+
+	&__cart {
+		display: flex;
+	}
+}
+.logo {
+
+	&__img {
+
+	}
+
+	&__text {
+		padding: 7px 0px 0px 24px;
+		line-height: 1.3;
+		@media (max-width: 562px){
+			display: none;
+		}
+	}
+}
+.search {
+
+	&__input {
+		flex: 1 1 auto;
+		padding: 10px 0px 0px 0px;
+		.input{
+			width: 400px;
+			height: 100%;
+			border-bottom: 1px solid #d3d7d9;
+			background-color: #fff;
+			padding: 0px 14px;
+			color: #929292;
+			font-size: 10px;
+			@media (max-width: $md1+px){
+				width: 100%;
+			}
+			@media (max-width: $md3+px){
+				width: 250px;
+			}
+			&.focus{
+				font-style: normal;
+				color: #333;
+			}
+			&.err{
+
+			}
+		}
+	}
+}
+.input {
+}
+.menu-items {
+
+	&__phone-item {
+		padding: 0px 40px 0px 0px;
+		@media (max-width: $md3+px){
+			display: none;
+		}
+	}
+
+	&__phone {
+		@media (max-width: 562px){
+			display: none;
+		}
+	}
+}
+.cart {
+	position: relative;
+
+	&__img {
+		@media (max-width: $md1+px){
+			padding: 10px 10px 0px 0px;
+		}
+
+	}
+
+	&__preis {
+		width: 100%;
+		margin: 12px 0px 0px 10px;
+		&:after {
+			content: '';
+			width: 0;
+			height: 0;
+			border-left: 5px solid transparent;
+			border-right: 5px solid transparent;
+			border-top: 5px solid rgb(2, 2, 2);
+			position: absolute;
+			top: 17px;
+			left: 110px;
+		}
+		@media (max-width: 980px){
+			display: none;
+		}
+	}
+}
+
+//====================================================================================================
+
+/*
+//Burger
+.icon-menu {
+	display: none;
+	@media (max-width: $md3+px) {
+		display: block;
+		position: absolute;
+		top: 18px;
+		right: 10px;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span {
+			transition: all 0.3s ease 0s;
+			top: calc(50% - 1px);
+			left: 0px;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: #000;
+			&:first-child {
+				top: 0px;
+			}
+			&:last-child {
+				top: auto;
+				bottom: 0px;
+			}
+		}
+		&._active {
+			span {
+				transform: scale(0);
+				&:first-child {
+					transform: rotate(-45deg);
+					top: calc(50% - 1px);
+				}
+				&:last-child {
+					transform: rotate(45deg);
+					bottom: calc(50% - 1px);
+				}
+			}
+		}
+	}
+}
+*/

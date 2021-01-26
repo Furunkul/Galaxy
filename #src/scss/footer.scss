@@ -1,0 +1,28 @@
+footer{}
+//====================================================================================================
+.footer {
+    background: #000;
+    height: 98px;
+    &__content {
+        padding: 40px 0px 0px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav {
+        display: flex;
+        flex: 1 1 90%;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: 400;
+        color: #ffffff;
+
+    }
+
+    &__social {
+    }
+}
+
+//====================================================================================================
+
