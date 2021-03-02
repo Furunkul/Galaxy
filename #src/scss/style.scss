@@ -265,7 +265,6 @@ font-weight: 400;
 }
 
 .sales {
-	
 	display: grid;
 	grid-template-columns: 9fr 1fr;
 	@media (max-width: 468px){
@@ -275,6 +274,7 @@ font-weight: 400;
 }
 
 .price {
+	
 	&__range {
 	}
 
