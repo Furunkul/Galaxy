@@ -1,8 +1,8 @@
-footer{}
 //====================================================================================================
 .footer {
     background: #000;
     height: 98px;
+    padding: 0px 15px;
     &__content {
         padding: 40px 0px 0px 0px;
         display: flex;
@@ -12,15 +12,30 @@ footer{}
 
     &__nav {
         display: flex;
-        flex: 1 1 90%;
+        flex: 1 1 70%;
         justify-content: space-between;
         font-size: 18px;
         font-weight: 400;
         color: #ffffff;
-
+        a {
+            color: #ffffff;
+        }
+        @media (max-width: $md2+px){
+            div {
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(1) {
+                    display: none;
+                }
+            }
+        }
     }
 
     &__social {
+        img {
+            padding: 0px 0px 0px 40 / $maxWidthContainer * 100vw;
+        }
     }
 }
 
