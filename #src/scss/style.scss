@@ -185,27 +185,10 @@ font-weight: 400;
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 .tabs {
 
-		&__items {
-			margin: 0px 0px 50px 0px;
-		}
-
-		&__item {
-			margin: 0px 40px 0px 40px;
-			&:first-child{
-				margin: 0px 40px 0px 0px;
-				font-weight: 600;
-			}
-		}
-
-		&__body {
-		}
-
 		&__block {
 			display: none;
 			&:target{
-				display: block;
-				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+
 			}
 		}
 }
@@ -285,5 +268,40 @@ font-weight: 400;
 		}
 	}
 }
+
+.tabs {
+
+	&__nav {
+		padding: 0px 0px 50px 0px;
+
+	}
+
+	&__nav-btn {
+		padding: 0px 80px 0px 40px;
+		font-size: 24px;
+		font-weight: 400;
+		background: #fff;
+		cursor: pointer;
+		&:first-child{
+			padding: 0px 40px 0px 0px;
+			
+		}
+		&.active {
+			font-weight: 600;
+		}
+	}
+}
+.tabs {
+
+		&__item {
+			display: none;
+			&.active {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+			}
+		}
+}
+
+
 
 

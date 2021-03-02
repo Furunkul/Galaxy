@@ -1557,28 +1557,8 @@ body.ie ._ibg img {
   padding: 30px 0px 0px 0px;
 }
 
-.tabs__items {
-  margin: 0px 0px 50px 0px;
-}
-
-.tabs__item {
-  margin: 0px 40px 0px 40px;
-}
-
-.tabs__item:first-child {
-  margin: 0px 40px 0px 0px;
-  font-weight: 600;
-}
-
 .tabs__block {
   display: none;
-}
-
-.tabs__block:target {
-  display: block;
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
 }
 
 .photo {
@@ -1667,6 +1647,36 @@ body.ie ._ibg img {
 
 .price__inputs input {
   margin: 0px 10px 20px 0px;
+}
+
+.tabs__nav {
+  padding: 0px 0px 50px 0px;
+}
+
+.tabs__nav-btn {
+  padding: 0px 80px 0px 40px;
+  font-size: 24px;
+  font-weight: 400;
+  background: #fff;
+  cursor: pointer;
+}
+
+.tabs__nav-btn:first-child {
+  padding: 0px 40px 0px 0px;
+}
+
+.tabs__nav-btn.active {
+  font-weight: 600;
+}
+
+.tabs__item {
+  display: none;
+}
+
+.tabs__item.active {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
 }
 
 @media (min-width: 991.98px) {
