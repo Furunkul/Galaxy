@@ -265,8 +265,13 @@ font-weight: 400;
 }
 
 .sales {
+	
 	display: grid;
 	grid-template-columns: 9fr 1fr;
+	@media (max-width: 468px){
+		display: flex;
+		justify-content: center;
+	}
 }
 
 .price {
